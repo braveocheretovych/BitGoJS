@@ -846,6 +846,13 @@
     "@babel/helper-string-parser" "^7.25.9"
     "@babel/helper-validator-identifier" "^7.25.9"
 
+"@babylonlabs-io/babylon-proto-ts@0.0.3-canary.6":
+  version "0.0.3-canary.6"
+  resolved "https://registry.npmjs.org/@babylonlabs-io/babylon-proto-ts/-/babylon-proto-ts-0.0.3-canary.6.tgz#a2f0051c2126d3873cd80bcd5003a51b557d1e26"
+  integrity sha512-G4N9MFWcxr4ntDgyEtpfFzi/e9F+zibtu5vd04PsG6hsP8xFvwhJoJZ8f2ddD/pnaR5yfMcESbC34AtOXkujYg==
+  dependencies:
+    "@bufbuild/protobuf" "^2.2.0"
+
 "@bitgo-forks/avalanchejs@4.1.0-alpha.1":
   version "4.1.0-alpha.1"
   resolved "https://registry.npmjs.org/@bitgo-forks/avalanchejs/-/avalanchejs-4.1.0-alpha.1.tgz#2ea96f7801669c9c6e012647f13f4872c29a606e"
@@ -876,6 +883,11 @@
   version "0.0.1-alpha.1"
   resolved "https://registry.npmjs.org/@brandonblack/musig/-/musig-0.0.1-alpha.1.tgz#0895f59977bedf519099ff6e2fcbcbced30bc761"
   integrity sha512-00RbByQG85lSzrkDjCblzrUc2n1LJAPPrEMHS4oMg+QckE0kzjd26JytT6yx6tNU2+aOXfK7O4kGW/sKVL67cw==
+
+"@bufbuild/protobuf@^2.2.0":
+  version "2.2.3"
+  resolved "https://registry.npmjs.org/@bufbuild/protobuf/-/protobuf-2.2.3.tgz#9cd136f6b687e63e9b517b3a54211ece942897ee"
+  integrity sha512-tFQoXHJdkEOSwj5tRIZSPNUuXK3RaR7T1nUrPgbYX1pUbvqqaaZAsfo+NXBPsz5rZMSKVFrgK1WL8Q/MSLvprg==
 
 "@cbor-extract/cbor-extract-darwin-arm64@2.2.0":
   version "2.2.0"
