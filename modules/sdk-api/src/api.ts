@@ -50,7 +50,20 @@ export function handleResponseResult<ResponseResultType>(
 ): (res: superagent.Response) => ResponseResultType {
   return function (res: superagent.Response): ResponseResultType {
     if (_.isNumber(res.status) && res.status >= 200 && res.status < 300) {
-      return optionalField ? res.body[optionalField] : res.body;
+      const contentType = res.header['content-type'] || '';
+      // For text-based responses, return the text.
+      if (contentType.includes('text/')) {
+        return res.text as unknown as ResponseResultType;
+      }
+
+      // If the content type indicates JSON OR a parsed body is already available,
+      // then return the specified field or the body.
+      if (contentType.includes('application/json') || res.body) {
+        return optionalField ? res.body[optionalField] : res.body;
+      }
+
+      // For other content types, return the whole response.
+      return res as unknown as ResponseResultType;
     }
     throw errFromResponse(res);
   };
